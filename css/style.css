@@ -1,0 +1,249 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #141414;
+    line-height: 1.5;
+    color:#184a45ff;
+}
+
+body h3{
+    font-size:2rem;
+}
+
+body ul li{
+    list-style: none;
+}
+
+body a{
+    text-decoration: none;
+}
+
+header{
+    position: relative;
+}
+.hero{
+    background-image: linear-gradient(rgba(70, 73, 83, 0.5),rgba(70, 73, 83, 0.5)), url('../img/think-outside-of-the-box-6375.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100vh;
+    padding: 30px 100px;
+}
+
+.logo{
+    float:left;
+}
+
+.menu{
+    float:right;   
+ }
+
+ .mobile{
+     display: none;
+ }
+
+ .mobile li{
+    display: inline-block;
+    padding:10px;
+ }
+
+ .mobile a{
+     color:white;
+     font-size:15px;
+     font-weight:bold;
+     transition: all 0.4s ease;
+ }
+
+.desktop{
+    color:white;
+    font-size:20px;
+    transition:all .2s ease;
+    transform-origin: center;
+    display: block;
+}
+
+.desktop:hover{
+    transform:scale(2);
+}
+
+.mobile a:hover{
+    color:black;
+}
+
+.main-text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    color:white;
+}
+.main-text h1{
+    font-size: 4rem;
+    font-weight:800;
+    letter-spacing: 50px;
+
+}
+
+.main-text h1 span{
+    cursor:pointer;
+    transform-origin:center;
+    display: inline-block;
+    transition:all 0.7s;
+}
+
+.main-text h1 span:hover{
+    transform:rotate(720deg);
+}
+
+.main-text a{
+    display: block;
+    margin-top:150px;
+    font-size:20px;
+    color:white;
+}
+
+/* section-2 */
+
+.content-1{
+    text-align: center;
+    display: grid;
+}
+
+.about, .skill{
+    background-color: rgb(252, 118, 106);
+    margin: 40px auto;
+    padding:40px;
+    width:60%;
+    border-radius:5px;
+    line-height: 1.7;
+
+}
+
+.about p{
+    margin:20px 0;
+    text-align: center;
+}
+
+
+.skill ul li{
+    font-size: 5rem;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.do{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:100px;
+}
+
+.do h3{
+    width:100%;
+    margin-bottom:30px;
+}
+
+.do-content{
+    width:30%;
+    margin:10px auto;
+}
+
+.circle{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:none;
+    background-color:#b0b8b4ff;
+    font-size:4rem;
+    margin:0 auto;
+}
+
+.circle i{
+    vertical-align:bottom;
+}
+
+.circle p{
+    font-size:10px;
+}
+
+.do-content p{
+    margin:20px 0;
+    line-height:1.8;
+}
+
+/* Projects */
+
+.projects iframe{
+    margin:0 10px;
+}
+
+
+
+
+
+
+@media only screen and (max-width:600px){
+
+    /* global */
+
+   h3, h2{
+       font-size:1rem;
+   }
+
+   .logo,
+   .menu{
+       float:none;
+       text-align:center;
+       margin:10px 0;
+   }
+
+   .desktop{
+       display:none;
+   }
+   .mobile{
+       display: inline-block;
+   }
+
+   .main-text, 
+   .about,
+   .skill,
+   .text,
+   .do-content{
+       padding:20px;
+       width:100%;
+   }
+
+   .main-text{
+       top:60%;
+   }
+   .content-1{
+       display: block;
+   }
+   
+   .main-text h1{
+       font-size:2.5rem;
+       letter-spacing: 20px;
+   }
+
+   .text ul li{
+    margin-top:5px;
+   }
+   .text a{
+       font-size:.7rem;
+   }
+
+}
+
+
+

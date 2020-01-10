@@ -12,7 +12,6 @@ html{
 body{
     font-family: 'Poppins', sans-serif;
     background: #141414;
-    line-height: 1.5;
     color:#184a45ff;
 }
 
@@ -28,11 +27,45 @@ body a{
     text-decoration: none;
 }
 
+.loader{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width:100%;
+    height:100%;
+    z-index: 99;
+    background-color: white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.loader > img{
+    width:300px;
+}
+
+.loader.hidden{
+    animation: fadeOut 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeOut{
+    100%{
+        opacity:0;
+        pointer-events: none;
+    }
+}
+
 header{
     position: relative;
 }
+
+
 .hero{
-    background-image: linear-gradient(rgba(70, 73, 83, 0.5),rgba(70, 73, 83, 0.5)), url('../img/think-outside-of-the-box-6375.jpg');
+    background-image: linear-gradient(rgba(70, 73, 83, 0.5),rgba(70, 73, 83, 0.5)), url('../img/action-blur-bulb-dark-355904.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -49,36 +82,23 @@ header{
     float:right;   
  }
 
- .mobile{
-     display: none;
- }
 
- .mobile li{
+ .menu-items li{
     display: inline-block;
     padding:10px;
  }
 
- .mobile a{
+ .menu-items a{
      color:white;
-     font-size:15px;
+     font-size:18px;
      font-weight:bold;
      transition: all 0.4s ease;
  }
 
-.desktop{
-    color:white;
-    font-size:20px;
-    transition:all .2s ease;
-    transform-origin: center;
-    display: block;
-}
 
-.desktop:hover{
-    transform:scale(2);
-}
 
-.mobile a:hover{
-    color:black;
+.menu-items a:hover{
+    color:rgb(252, 118, 106);
 }
 
 .main-text{
@@ -93,7 +113,6 @@ header{
     font-size: 4rem;
     font-weight:800;
     letter-spacing: 50px;
-
 }
 
 .main-text h1 span{
@@ -112,7 +131,18 @@ header{
     margin-top:150px;
     font-size:20px;
     color:white;
+    animation: bounce .8s infinite alternate;
 }
+
+@keyframes bounce{
+    from{
+        transform:translateY(0);
+    }
+
+    to{
+        transform: translateY(15px);
+    }
+} 
 
 /* section-2 */
 
@@ -143,15 +173,20 @@ header{
     margin: 0 30px;
 }
 
-.do{
+
+/* What I Do */
+
+
+.what-i-do{
     display:flex;
     flex-wrap:wrap;
     margin-top:100px;
 }
 
-.do h3{
+.what-i-do h3{
     width:100%;
-    margin-bottom:30px;
+    text-align: center;
+    margin:20px;
 }
 
 .do-content{
@@ -166,7 +201,13 @@ header{
     border:none;
     background-color:#b0b8b4ff;
     font-size:4rem;
-    margin:0 auto;
+    margin:30px auto;
+    text-align: center;
+    transition: 0.2s ease-in;
+}
+
+.circle:hover{
+    background-color: rgb(252, 118, 106);
 }
 
 .circle i{
@@ -180,52 +221,120 @@ header{
 .do-content p{
     margin:20px 0;
     line-height:1.8;
+    text-align: center;
 }
 
 /* Projects */
 
-.projects iframe{
+.projects{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+.projects h3{
+    width:100%;
+    text-align: center;
+    margin:40px 0;
+}
+
+.proj-1{
+    text-align: center;
+    margin:20px 0;
+}
+
+.proj-1 img{
+    border-radius: 10px;
+    transition:0.3s all;
+    max-width: 60%;
+}
+
+.proj-1:hover img{
+    transform: scale(1.1);
+    
+}
+
+
+.proj-1 p{
+    margin-top:20px;
+    font-size:20px;
+    text-transform: uppercase;
+    font-size:800;
+    line-height:1.7;
+    color:rgb(252, 118, 106);
+}
+
+footer{
+    background-color: rgb(252, 118, 106);
+    height:30vh;
+    padding:50px 50px 0;
+}
+
+.footer-left{
+    float: left;
+}
+
+.resume{
+    font-size:18px;
+    font-weight:bold;
+    color:#b0b8b4ff;
+    border:none;
+    border-radius:5px;
+    padding:10px;
+    background-color:#184a45ff;
+    box-shadow: 0 13px 10px 5px #1414142a;
+}
+
+.footer-left a{
+    color:#b0b8b4ff;
+}
+
+.footer-left p{
+    margin:30px 0;
+    font-size:18px;
+}
+.social-medias{
+    float:right;
+    font-size:1.5rem;
+}
+
+.social-medias i{
+    color: #184a45ff;
     margin:0 10px;
 }
 
 
 
-
-
-
 @media only screen and (max-width:600px){
 
-    /* global */
 
    h3, h2{
        font-size:1rem;
    }
 
-   .logo,
-   .menu{
+    .logo,
+    .menu,
+    .footer-left,
+    .social-medias{
        float:none;
        text-align:center;
        margin:10px 0;
    }
 
-   .desktop{
-       display:none;
-   }
-   .mobile{
-       display: inline-block;
+   .menu-items li{
+      width: 100%;
    }
 
-   .main-text, 
+   .main-text,
    .about,
    .skill,
    .text,
    .do-content{
        padding:20px;
-       width:100%;
+       width:90%;
    }
 
    .main-text{
-       top:60%;
+       top:70%;
    }
    .content-1{
        display: block;
@@ -241,6 +350,10 @@ header{
    }
    .text a{
        font-size:.7rem;
+   }
+
+   footer{
+       height:auto;
    }
 
 }

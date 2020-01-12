@@ -108,8 +108,7 @@ header{
     left:50%;
     transform: translate(-50%,-50%);
     text-align:center;
-    color:#fff
-    ;
+    color:white;
 }
 
 .main-text h1{
@@ -138,9 +137,9 @@ header{
 
 } 
 
-/* section-2 */
+/* section-1 */
 
-.content-1{
+.section-1{
     display: grid;
     text-align: center;
 }
@@ -168,22 +167,22 @@ header{
 }
 
 
-/* What I Do */
+/* Section-2 */
 
 
-.what-i-do{
+.section-2{
     display:flex;
     flex-wrap:wrap;
     margin:40px 0;
 }
 
-.what-i-do h3{
+.section-2 h3{
     width:100%;
     text-align: center;
     margin:20px;
 }
 
-.do-content{
+.s2-content{
     width:30%;
     margin:10px auto;
 }
@@ -196,6 +195,7 @@ header{
     background-color:transparent;
     font-size:4rem;
     margin:30px auto;
+    padding:10px;
     text-align: center;
     transition: 0.2s ease-in-out;
 }
@@ -216,7 +216,7 @@ header{
     padding-top:10px;
 }
 
-.do-content p{
+.s2-content p{
     margin:20px 0;
     line-height:1.8;
     text-align: center;
@@ -270,6 +270,8 @@ header{
     color:white;
 }
 
+/* Footer */
+
 footer{
     background-color: transparent;
     height:30vh;
@@ -313,12 +315,12 @@ footer{
     transform:scale(1.1);
 }
 
-.social-medias{
+.social-media{
     float:right;
     font-size:1.5rem;
 }
 
-.social-medias i{
+.social-media i{
     color:white;
     margin:0 10px;
 }
@@ -335,7 +337,7 @@ footer{
     .logo,
     .menu,
     .footer-left,
-    .social-medias{
+    .social-media{
        float:none;
        text-align:center;
        margin:10px 0;
@@ -349,7 +351,7 @@ footer{
    .about,
    .skill,
    .text,
-   .do-content{
+   .s2-content{
        padding:20px;
        width:100%;
    }
@@ -357,7 +359,7 @@ footer{
    .main-text{
        top:70%;
    }
-   .content-1{
+   .section-1{
        display: block;
    }
    

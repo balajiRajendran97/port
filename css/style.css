@@ -11,8 +11,8 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #0b0c10;
-    color:#66fcf1;
+    background: linear-gradient(to right, #456475, #292e49);
+    color:white;
 
 }
 
@@ -90,7 +90,7 @@ header{
  }
 
  .menu-items a{
-     color:#66fcf1;
+     color:white;
      font-size:18px;
      font-weight:bold;
      transition: all 0.4s ease;
@@ -108,7 +108,8 @@ header{
     left:50%;
     transform: translate(-50%,-50%);
     text-align:center;
-    color:#66fcf1;
+    color:#fff
+    ;
 }
 
 .main-text h1{
@@ -156,6 +157,7 @@ header{
 .about p{
     margin:20px 0;
     text-align: center;
+    font-size:18px;
 }
 
 
@@ -172,7 +174,7 @@ header{
 .what-i-do{
     display:flex;
     flex-wrap:wrap;
-    margin-top:100px;
+    margin:40px 0;
 }
 
 .what-i-do h3{
@@ -190,7 +192,7 @@ header{
     width:150px;
     height:150px;
     border-radius:50%;
-    border:1px solid #66fcf1;
+    border:1px solid white;
     background-color:transparent;
     font-size:4rem;
     margin:30px auto;
@@ -199,8 +201,9 @@ header{
 }
 
 .circle:hover{
-    background-color: #66fcf1;
-    color: #0b0c10;
+    background-color: white;
+    color:#292e49;
+    border-color: #292e49;
 }
 
 .circle i{
@@ -225,7 +228,7 @@ header{
     display: flex;
     flex-wrap:wrap;
     justify-content:space-around;
-    margin-bottom: 100px;;
+    margin-bottom: 100px;
 }
 .projects h3{
     width:100%;
@@ -264,15 +267,15 @@ header{
     font-size:2rem;
     text-transform: uppercase;
     line-height:1.7;
-    color:#66fcf1;
+    color:white;
 }
 
 footer{
-    background-color: #0b0c10;
+    background-color: transparent;
     height:30vh;
     padding:50px 50px 0;
     margin:0 50px;
-    border-top:1px solid #45a29e;
+    border-top:1px solid white;
 }
 
 .footer-left{
@@ -280,24 +283,34 @@ footer{
 }
 
 .resume{
-    font-size:18px;
-    font-weight:bold;
-    color:#66fcf1   ;
-    border:none;
+    color:white;
+    border:2px solid white;
     border-radius:5px;
     padding:10px;
-    background-color:#45a29e;
-    box-shadow: 0 13px 10px 5px #1414142a;
+    background-color:transparent;
+    transition:all 0.2s ease;
 }
+
+.resume a{
+    color:white;
+    font-size:16px;
+    transition:all 0.2s;
+}
+
+
 
 .footer-left p{
     margin:30px 0;
     font-size:18px;
-    color:#66fcf1;
+    color:white;
 }
 
 .footer-left p a{
-    color:#45a29e;
+    color:white;
+}
+
+.resume:hover{
+    transform:scale(1.1);
 }
 
 .social-medias{
@@ -306,7 +319,7 @@ footer{
 }
 
 .social-medias i{
-    color:#66fcf1;
+    color:white;
     margin:0 10px;
 }
 

@@ -11,8 +11,9 @@ html{
 
 body{
     font-family: 'Poppins', sans-serif;
-    background: #141414;
-    color:#184a45ff;
+    background: #0b0c10;
+    color:#66fcf1;
+
 }
 
 body h3{
@@ -89,7 +90,7 @@ header{
  }
 
  .menu-items a{
-     color:white;
+     color:#66fcf1;
      font-size:18px;
      font-weight:bold;
      transition: all 0.4s ease;
@@ -98,7 +99,7 @@ header{
 
 
 .menu-items a:hover{
-    color:rgb(252, 118, 106);
+    color: #45a29e;
 }
 
 .main-text{
@@ -107,8 +108,9 @@ header{
     left:50%;
     transform: translate(-50%,-50%);
     text-align:center;
-    color:white;
+    color:#66fcf1;
 }
+
 .main-text h1{
     font-size: 4rem;
     font-weight:800;
@@ -126,38 +128,29 @@ header{
     transform:rotate(720deg);
 }
 
-.main-text a{
-    display: block;
+#scroll-gif{
     margin-top:150px;
     font-size:20px;
-    color:white;
-    animation: bounce .8s infinite alternate;
+    width:40px;
 }
 
-@keyframes bounce{
-    from{
-        transform:translateY(0);
-    }
 
-    to{
-        transform: translateY(15px);
-    }
 } 
 
 /* section-2 */
 
 .content-1{
-    text-align: center;
     display: grid;
+    text-align: center;
 }
 
 .about, .skill{
-    background-color: rgb(252, 118, 106);
+    text-align: center;
     margin: 40px auto;
     padding:40px;
     width:60%;
     border-radius:5px;
-    line-height: 1.7;
+    line-height: 2;
 
 }
 
@@ -198,24 +191,27 @@ header{
     width:150px;
     height:150px;
     border-radius:50%;
-    border:none;
-    background-color:#b0b8b4ff;
+    border:1px solid #66fcf1;
+    background-color:transparent;
     font-size:4rem;
     margin:30px auto;
     text-align: center;
-    transition: 0.2s ease-in;
+    transition: 0.2s ease-in-out;
 }
 
 .circle:hover{
-    background-color: rgb(252, 118, 106);
+    background-color: #66fcf1;
+    color: #0b0c10;
 }
 
 .circle i{
-    vertical-align:bottom;
+    vertical-align: bottom;
+
 }
 
 .circle p{
     font-size:10px;
+    padding-top:10px;
 }
 
 .do-content p{

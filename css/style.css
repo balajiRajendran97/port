@@ -1,385 +1,369 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #456475, #292e49);
-    color:white;
-
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #456475, #292e49);
+  color: white;
 }
 
-body h3{
-    font-size:2rem;
+body h3 {
+  font-size: 2rem;
 }
 
-body ul li{
-    list-style: none;
+body ul li {
+  list-style: none;
 }
 
-body a{
-    text-decoration: none;
+body a {
+  text-decoration: none;
 }
 
-.loader{
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width:100%;
-    height:100%;
-    z-index: 99;
-    background-color: white;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.loader {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.loader > img{
-    width:300px;
+.loader > img {
+  width: 300px;
 }
 
-.loader.hidden{
-    animation: fadeOut 1s;
-    animation-fill-mode: forwards;
+.loader.hidden {
+  animation: fadeOut 1s;
+  animation-fill-mode: forwards;
 }
 
-
-@keyframes fadeOut{
-    100%{
-        opacity:0;
-        pointer-events: none;
-    }
+@keyframes fadeOut {
+  100% {
+    opacity: 0;
+    pointer-events: none;
+  }
 }
 
-header{
-    position: relative;
+header {
+  position: relative;
 }
 
-
-.hero{
-    background-image: linear-gradient(rgba(70, 73, 83, 0.5),rgba(70, 73, 83, 0.5)), url('../img/action-blur-bulb-dark-355904.jpg');
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height:100vh;
-    padding: 30px 100px;
+.hero {
+  background-image: linear-gradient(
+      rgba(70, 73, 83, 0.5),
+      rgba(70, 73, 83, 0.5)
+    ),
+    url("../img/action-blur-bulb-dark-355904.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  padding: 30px 100px;
 }
 
-.logo{
-    float:left;
+.logo {
+  float: left;
 }
 
-.menu{
-    float:right;   
- }
-
-
- .menu-items li{
-    display: inline-block;
-    padding:10px;
- }
-
- .menu-items a{
-     color:white;
-     font-size:18px;
-     font-weight:bold;
-     transition: all 0.4s ease;
- }
-
-
-
-.menu-items a:hover{
-    color: #45a29e;
+.menu {
+  float: right;
 }
 
-.main-text{
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    text-align:center;
-    color:white;
+.menu-items li {
+  display: inline-block;
+  padding: 10px;
 }
 
-.main-text h1{
-    font-size: 4rem;
-    font-weight:800;
-    letter-spacing: 50px;
+.menu-items a {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: all 0.4s ease;
 }
 
-.main-text h1 span{
-    cursor:pointer;
-    transform-origin:center;
-    display: inline-block;
-    transition:all 0.7s;
+.menu-items a:hover {
+  color: #45a29e;
 }
 
-.main-text h1 span:hover{
-    transform:rotate(720deg);
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
 }
 
-#scroll-gif{
-    margin-top:150px;
-    font-size:20px;
-    width:40px;
+.main-text h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  letter-spacing: 50px;
 }
 
+.main-text h1 span {
+  cursor: pointer;
+  transform-origin: center;
+  display: inline-block;
+  transition: all 0.7s;
+}
 
-} 
+.main-text h1 span:hover {
+  transform: rotate(720deg);
+}
+
+#scroll-gif {
+  margin-top: 150px;
+  font-size: 20px;
+  width: 40px;
+}
 
 /* section-1 */
 
-.section-1{
-    display: grid;
-    text-align: center;
+.section-1 {
+  display: grid;
+  text-align: center;
 }
 
-.about, .skill{
-    text-align: center;
-    margin: 40px auto;
-    padding:40px;
-    width:60%;
-    border-radius:5px;
-    line-height: 2;
+.about,
+.skill {
+  text-align: center;
+  margin: 40px auto;
+  padding: 40px;
+  width: 60%;
+  border-radius: 5px;
+  line-height: 2;
 }
 
-.about p{
-    margin:20px 0;
-    text-align: center;
-    font-size:18px;
+.about p {
+  margin: 20px 0;
+  text-align: center;
+  font-size: 18px;
 }
 
-
-.skill ul li{
-    font-size: 5rem;
-    display: inline-block;
-    margin: 0 20px;
+.skill ul li {
+  font-size: 5rem;
+  display: inline-block;
+  margin: 0 20px;
 }
-
 
 /* Section-2 */
 
-
-.section-2{
-    display:flex;
-    flex-wrap:wrap;
-    margin:40px 0;
+.section-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 40px 0;
 }
 
-.section-2 h3{
-    width:100%;
-    text-align: center;
-    margin:20px;
+.section-2 h3 {
+  width: 100%;
+  text-align: center;
+  margin: 20px;
 }
 
-.s2-content{
-    width:30%;
-    margin:10px auto;
+.s2-content {
+  width: 30%;
+  margin: 10px auto;
 }
 
-.circle{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    border:1px solid white;
-    background-color:transparent;
-    font-size:4rem;
-    margin:30px auto;
-    padding:10px;
-    text-align: center;
-    transition: 0.2s ease-in-out;
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: transparent;
+  font-size: 4rem;
+  margin: 30px auto;
+  padding: 10px;
+  text-align: center;
+  transition: 0.2s ease-in-out;
 }
 
-.circle:hover{
-    background-color: white;
-    color:#292e49;
-    border-color: #292e49;
+.circle:hover {
+  background-color: white;
+  color: #292e49;
+  border-color: #292e49;
 }
 
-.circle i{
-    vertical-align: bottom;
-
+.circle i {
+  vertical-align: bottom;
 }
 
-.circle p{
-    font-size:10px;
-    padding-top:10px;
+.circle p {
+  font-size: 10px;
+  padding-top: 10px;
 }
 
-.s2-content p{
-    margin:20px 0;
-    line-height:1.8;
-    text-align: center;
+.s2-content p {
+  margin: 20px 0;
+  line-height: 1.8;
+  text-align: center;
 }
 
 /* Projects */
 
-.projects{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content:space-around;
-    margin-bottom: 100px;
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 100px;
 }
-.projects h3{
-    width:100%;
-    text-align: center;
-    margin:40px 0;
-}
-
-.proj-content{
-    text-align: center;
-    margin:20px 0;
+.projects h3 {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
 }
 
-.proj-1{    
-    position: relative;
-    overflow: hidden;
-    box-sizing: border-box;
-    width:300px;
-    border-radius: 10px;
-    background-color: antiquewhite;
+.proj-content {
+  text-align: center;
+  margin: 20px 0;
 }
 
-.proj-1 img{
-    transition:0.3s all;
-    max-width: 100%;
-    vertical-align: top;
+.proj-1 {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 300px;
+  border-radius: 10px;
+  background-color: antiquewhite;
 }
 
-.proj-1:hover img{
-    transform: scale(1.1);
-    
+.proj-1 img {
+  transition: 0.3s all;
+  max-width: 100%;
+  vertical-align: top;
 }
 
+.proj-1:hover img {
+  transform: scale(1.1);
+}
 
-.proj-content p{
-    margin-top:20px;
-    font-size:2rem;
-    text-transform: uppercase;
-    line-height:1.7;
-    color:white;
+.proj-content p {
+  margin-top: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  line-height: 1.7;
+  color: white;
 }
 
 /* Footer */
 
-footer{
-    background-color: transparent;
-    height:30vh;
-    padding:50px 50px 0;
-    margin:0 50px;
-    border-top:1px solid white;
+footer {
+  background-color: transparent;
+  height: 30vh;
+  padding: 50px 50px 0;
+  margin: 0 50px;
+  border-top: 1px solid white;
 }
 
-.footer-left{
-    float: left;
+.footer-left {
+  float: left;
 }
 
-.resume{
-    color:white;
-    border:2px solid white;
-    border-radius:5px;
-    padding:10px;
-    background-color:transparent;
-    transition:all 0.2s ease;
+.resume {
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: transparent;
+  transition: all 0.2s ease;
 }
 
-.resume a{
-    color:white;
-    font-size:16px;
-    transition:all 0.2s;
+.resume a {
+  color: white;
+  font-size: 16px;
+  transition: all 0.2s;
 }
 
-
-
-.footer-left p{
-    margin:30px 0;
-    font-size:18px;
-    color:white;
+.footer-left p {
+  margin: 30px 0;
+  font-size: 18px;
+  color: white;
 }
 
-.footer-left p a{
-    color:white;
+.footer-left p a {
+  color: white;
 }
 
-.resume:hover{
-    transform:scale(1.1);
+.resume:hover {
+  transform: scale(1.1);
 }
 
-.social-media{
-    float:right;
-    font-size:1.5rem;
+.social-media {
+  float: right;
+  font-size: 1.5rem;
 }
 
-.social-media i{
-    color:white;
-    margin:0 10px;
+.social-media i {
+  color: white;
+  margin: 0 10px;
 }
 
+@media only screen and (max-width: 600px) {
+  h3,
+  h2 {
+    font-size: 1rem;
+  }
 
+  .logo,
+  .menu,
+  .footer-left,
+  .social-media {
+    float: none;
+    text-align: center;
+    margin: 10px 0;
+  }
 
-@media only screen and (max-width:600px){
+  .menu-items li {
+    width: 100%;
+  }
 
+  .main-text,
+  .about,
+  .skill,
+  .text,
+  .s2-content {
+    padding: 20px;
+    width: 100%;
+  }
 
-   h3, h2{
-       font-size:1rem;
-   }
+  .main-text {
+    top: 70%;
+  }
+  .section-1 {
+    display: block;
+  }
 
-    .logo,
-    .menu,
-    .footer-left,
-    .social-media{
-       float:none;
-       text-align:center;
-       margin:10px 0;
-   }
+  .main-text h1 {
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+  }
 
-   .menu-items li{
-      width: 100%;
-   }
+  .text ul li {
+    margin-top: 5px;
+  }
+  .text a {
+    font-size: 0.7rem;
+  }
 
-   .main-text,
-   .about,
-   .skill,
-   .text,
-   .s2-content{
-       padding:20px;
-       width:100%;
-   }
+  footer {
+    height: auto;
+  }
 
-   .main-text{
-       top:70%;
-   }
-   .section-1{
-       display: block;
-   }
-   
-   .main-text h1{
-       font-size:2.5rem;
-       letter-spacing: 20px;
-   }
-
-   .text ul li{
-    margin-top:5px;
-   }
-   .text a{
-       font-size:.7rem;
-   }
-
-   footer{
-       height:auto;
-   }
-
+  .footer-left p a {
+    font-size: 13px;
+  }
 }
-
-
-
